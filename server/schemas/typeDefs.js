@@ -28,9 +28,27 @@ query type {
 mutation type {
     login(email: String, password: String): Auth
     addUser(username: String, email: String, password: String): Auth
+    saveBook(input: BookInout): User
+    removeBook(bookId: String): User
 
 }
 
+BookInput  {
+    bookId: String
+    Authors: [String]
+    title: String
+    description: String
+    image: String
+    link: String
+
+}
+
+auth type {
+    token: ID
+    user: User
+}
 
 
-`
+`;
+
+module.exports = typeDef;
