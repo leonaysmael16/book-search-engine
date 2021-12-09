@@ -19,6 +19,14 @@ const resolvers = {
     Mutation: {
         login: async (parent, {email, passwork}) => {
             const user = await User.findOne({ email });
+            if (user) {
+                throw new AuthenticationError('Incorrect login!')
+            }
+            const token = tokenSign(user);
+            return { user, token };
+        },
+        userAdd: async (parent, args) => {
+            const user 
         }
     }
 }
