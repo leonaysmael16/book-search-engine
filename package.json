@@ -11,6 +11,7 @@
     "ansi-regex": "^5.0.1",
     "ansi-styles": "^4.3.0",
     "anymatch": "^3.1.2",
+    "apollo-server": "^3.5.0",
     "apollo-server-express": "^3.5.0",
     "aproba": "^1.2.0",
     "are-we-there-yet": "^1.1.7",
@@ -92,6 +93,7 @@
     "global-dirs": "^3.0.0",
     "got": "^9.6.0",
     "graceful-fs": "^4.2.8",
+    "graphql": "^15.8.0",
     "has-flag": "^4.0.0",
     "has-unicode": "^2.0.1",
     "has-yarn": "^2.1.0",
@@ -260,7 +262,8 @@
     "yallist": "^3.1.1"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
