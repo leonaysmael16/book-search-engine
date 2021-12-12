@@ -33,7 +33,7 @@ type mutation {
 
 }
 
-input  {
+input BookInpt {
     bookId: String
     Authors: [String]
     title: String
